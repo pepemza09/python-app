@@ -1,5 +1,5 @@
 # python-app
-This is the template to devel projects with Django using docker
+This is the template to develop projects with Django using docker
 
 ## To start a new project 🔧
 - Clone the repository into a local directory
