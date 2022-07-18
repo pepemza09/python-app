@@ -1,5 +1,4 @@
 # python-app
-
 This is the template to devel projects with Django using docker
 
 ## To start a new project 🔧
@@ -11,7 +10,7 @@ This is the template to devel projects with Django using docker
 docker-compose run --rm app sh -c "django-admin startproject app ."
 ```
 ## To start a new python app 🔧
--to start a new app (i.e. core) type
+- to start a new app (i.e. core) type
 ```sh
 docker-compose run --rm app sh -c "python manage.py startapp core"
 ```
