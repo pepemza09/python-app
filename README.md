@@ -14,3 +14,29 @@ docker-compose run --rm app sh -c "django-admin startproject app ."
 ```sh
 docker-compose run --rm app sh -c "python manage.py startapp core"
 ```
+when setup is finish, add the app in the project editing the INSTALLED_APPS on app/app/settings.py
+
+- to create migrations
+```sh
+docker-compose run --rm app sh -c "python manage.py makemigrations"
+```
+- to create super user
+```sh
+docker-compose run --rm app sh -c "python manage.py createsuperuser"
+```
+- to production don't forget make copy the .env.sample on .env file
+```sh
+cp .env.sample to .env
+```
+## Running the server on test/dev mode 🔧
+```sh
+docker-compose -f .\docker-compose.yml down --volumes
+docker-compose -f docker-compose.yml build
+docker-compose -f docker-compose.yml up
+```
+## Running the server oon production mode 🔧
+```sh
+docker-compose -f .\docker-compose-deploy.yml down --volumes
+docker-compose -f docker-compose-deploy.yml build
+docker-compose -f docker-compose-deploy.yml up
+```
