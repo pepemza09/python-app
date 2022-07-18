@@ -30,7 +30,7 @@ cp .env.sample to .env
 ```
 ## Running the server on test/dev mode 🔧
 ```sh
-docker-compose -f .\docker-compose.yml down --volumes
+docker-compose -f docker-compose.yml down --volumes
 docker-compose -f docker-compose.yml build
 docker-compose -f docker-compose.yml up
 ```
@@ -38,7 +38,7 @@ docker-compose -f docker-compose.yml up
 This config run the nginx server with the app inside
 
 ```sh
-docker-compose -f .\docker-compose-deploy.yml down --volumes
+docker-compose -f docker-compose-deploy.yml down --volumes
 docker-compose -f docker-compose-deploy.yml build
 docker-compose -f docker-compose-deploy.yml up
 ```
