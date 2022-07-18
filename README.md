@@ -34,7 +34,9 @@ docker-compose -f .\docker-compose.yml down --volumes
 docker-compose -f docker-compose.yml build
 docker-compose -f docker-compose.yml up
 ```
-## Running the server oon production mode 🔧
+## Running the server on production mode 🔧
+This config run the nginx server with the app inside
+
 ```sh
 docker-compose -f .\docker-compose-deploy.yml down --volumes
 docker-compose -f docker-compose-deploy.yml build
