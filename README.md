@@ -26,8 +26,10 @@ docker-compose run --rm app sh -c "python manage.py createsuperuser"
 ```
 - to production don't forget make copy the .env.sample on .env file
 ```sh
-cp .env.sample to .env
+cp .env.sample .env
 ```
+then edit .env file with the correct values
+
 ## Running the server on test/dev mode 🔧
 ```sh
 docker-compose -f docker-compose.yml down --volumes
